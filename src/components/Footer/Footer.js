@@ -16,6 +16,7 @@ const InnerWrapper = styled.div`
   align-items: center;
 
   @media (min-width: ${({ theme }) => theme.mediaSize.lg}) {
+    padding: 7.2rem 0;
     flex-direction: row;
     align-items: flex-start;
   }

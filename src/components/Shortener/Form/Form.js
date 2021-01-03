@@ -19,6 +19,7 @@ const FormWrapper = styled.form`
   }
 
   @media (min-width: ${({ theme }) => theme.mediaSize.lg}) {
+    margin: 0;
     background-image: url(${bgImgD});
     padding: 5.2rem 6.4rem;
     display: flex;
@@ -105,7 +106,9 @@ const Form = ({ error, value, loading, changeFn, submitFn }) => (
       placeholder="Shorten a link here..."
     />
     <ErrorText error={error}>Please add a link</ErrorText>
-    <Button type="submit" disabled={loading}>Shorten It!</Button>
+    <Button type="submit" disabled={loading}>
+      Shorten It!
+    </Button>
   </FormWrapper>
 );
 

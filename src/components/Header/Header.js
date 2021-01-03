@@ -2,8 +2,8 @@ import styled from 'styled-components';
 import Logo from '../Logo/Logo';
 import { sharedWrapper } from '../../theme/GlobalStyles';
 import Navigation from './Navigation/Navigation';
-import MobileNavButton from './MobileNavButton/MobileNavButton';
 import { useEffect, useState } from 'react';
+import iconMenu from '../../assets/icon-hamburger.svg';
 
 const Wrapper = styled.header`
   padding: 4rem 0 2.3rem;
@@ -27,9 +27,15 @@ const StyledLogo = styled(Logo)`
   flex-shrink: 0;
 `;
 
-const MenuToggleBtn = styled(MobileNavButton)`
-  margin: -1rem -1.3rem;
-  padding: 1rem 1.3rem;
+const MenuToggleBtn = styled.button`
+  margin: -2rem -1rem;
+  padding: 2rem;
+  width: 2.4rem;
+  height: 2.1rem;
+  border: none;
+  background-color: transparent;
+  background: url(${iconMenu}) no-repeat center;
+  cursor: pointer;
 
   @media (min-width: ${({ theme }) => theme.mediaSize.md}) {
     display: none;
@@ -51,10 +57,10 @@ const Header = () => {
   return (
     <Wrapper>
       <InnerWrapper>
-        <a href="/">
+        <a href="/" aria-label="Logo Shortly">
           <StyledLogo />
         </a>
-        <MenuToggleBtn onClick={toggleMenu} />
+        <MenuToggleBtn onClick={toggleMenu} aria-label="Menu Toggle Button" />
         <Navigation active={active} />
       </InnerWrapper>
     </Wrapper>

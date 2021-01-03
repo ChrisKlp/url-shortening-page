@@ -37,6 +37,7 @@ const InnerWrapper = styled.div`
 `;
 
 const ResultsListWrapper = styled.ul`
+  margin-top: 2.4rem;
   display: grid;
   gap: 2.4rem;
 

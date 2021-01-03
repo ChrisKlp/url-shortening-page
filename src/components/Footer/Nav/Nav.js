@@ -5,11 +5,12 @@ const Wrapper = styled.nav`
   margin: 4.9rem 0 4.8rem;
   display: flex;
   flex-direction: column;
-  align-content: start;
+  align-items: center;
   gap: 4rem;
 
   @media (min-width: ${({ theme }) => theme.mediaSize.md}) {
     flex-direction: row;
+    align-items: flex-start;
     gap: 0;
   }
 

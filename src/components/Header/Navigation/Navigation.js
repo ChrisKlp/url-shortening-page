@@ -48,6 +48,7 @@ const LoginWrapper = styled.div`
   @media (min-width: ${({ theme }) => theme.mediaSize.md}) {
     flex-direction: row;
     align-items: center;
+    gap: 3.7rem;
   }
 `;
 

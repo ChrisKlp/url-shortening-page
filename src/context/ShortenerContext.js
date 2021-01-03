@@ -36,6 +36,8 @@ const ShortenerProvider = ({ children }) => {
           },
           ...prev,
         ]);
+      } else {
+        setIsLoading(false);
       }
     } catch (error) {
       setIsLoading(false);
