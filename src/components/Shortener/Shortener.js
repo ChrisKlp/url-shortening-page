@@ -24,7 +24,7 @@ const Wrapper = styled.div`
   }
 
   @media (min-width: ${({ theme }) => theme.mediaSize.lg}) {
-    padding-bottom: 12rem;
+    padding-bottom: 9.6rem;
 
     &::before {
       height: 8.4rem;

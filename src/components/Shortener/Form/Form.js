@@ -5,7 +5,6 @@ import Button from '../../Buttons/Button';
 
 const FormWrapper = styled.form`
   position: relative;
-  margin-bottom: 2.4rem;
   padding: 2.4rem;
   display: grid;
   background-color: ${({ theme }) => theme.colorSecondary};
